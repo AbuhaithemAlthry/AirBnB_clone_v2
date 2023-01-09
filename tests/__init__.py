@@ -5,7 +5,6 @@ import os
 from typing import TextIO
 from models.engine.file_storage import FileStorage
 
-
 def clear_stream(stream: TextIO):
     """Clears the contents of a given stream
 
@@ -15,7 +14,6 @@ def clear_stream(stream: TextIO):
     if stream.seekable():
         stream.seek(0)
         stream.truncate(0)
-
 
 def delete_file(file_path: str):
     """Removes a file if it exists.
